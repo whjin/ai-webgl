@@ -1,2 +1,3 @@
-# webgl-framework
-WebGL框架
+# ai-webgl
+
+AI WebGL项目实例
