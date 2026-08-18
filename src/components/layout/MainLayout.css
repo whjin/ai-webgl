@@ -1,0 +1,17 @@
+.app-layout {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.app-body {
+  flex: 1;
+  overflow: hidden;
+  background: var(--color-canvas);
+}
+
+.app-content {
+  overflow: auto;
+  background: var(--color-canvas);
+  position: relative;
+}

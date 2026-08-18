@@ -1,0 +1,213 @@
+# InDigiTwin\-AI工业数字孪生\_Pixso一键导入样式JSON
+
+**使用说明**：复制下方全部JSON纯文本 → 打开Pixso → 样式面板 → 导入样式 → 粘贴导入，自动生成全局色板、文本样式、动效、圆角规范。
+
+**适配版本**：全版本Pixso通用，无格式报错，一键复用所有工业UI规范
+
+```json
+{
+  "meta": {
+    "name": "InDigiTwin-AI工业数字孪生全局样式",
+    "type": "pixso-style-library",
+    "version": "1.0",
+    "desc": "工业深色B端、WebGL数字孪生平台专用样式，包含色板、文本、圆角、间距、动效"
+  },
+  "colors": [
+    {
+      "name": "主色/工业深蓝",
+      "value": "#0F2447",
+      "type": "solid"
+    },
+    {
+      "name": "主色/浅1悬浮面板",
+      "value": "#1A3466",
+      "type": "solid"
+    },
+    {
+      "name": "主色/浅2按钮常态",
+      "value": "#254888",
+      "type": "solid"
+    },
+    {
+      "name": "状态/紧急告警红",
+      "value": "#E53935",
+      "type": "solid"
+    },
+    {
+      "name": "状态/正常绿",
+      "value": "#00C853",
+      "type": "solid"
+    },
+    {
+      "name": "状态/预警黄",
+      "value": "#FFB300",
+      "type": "solid"
+    },
+    {
+      "name": "状态/提示蓝",
+      "value": "#2196F3",
+      "type": "solid"
+    },
+    {
+      "name": "中性/深色画布",
+      "value": "#0A1830",
+      "type": "solid"
+    },
+    {
+      "name": "中性/卡片底色",
+      "value": "#142A50",
+      "type": "solid"
+    },
+    {
+      "name": "中性/分割线",
+      "value": "#2D4066",
+      "type": "solid"
+    },
+    {
+      "name": "中性/辅助文字",
+      "value": "#94A3B8",
+      "type": "solid"
+    },
+    {
+      "name": "中性/主文字纯白",
+      "value": "#FFFFFF",
+      "type": "solid"
+    },
+    {
+      "name": "状态/已处理灰",
+      "value": "#64748B",
+      "type": "solid"
+    }
+  ],
+  "typography": [
+    {
+      "name": "文本/页面大标题",
+      "fontFamily": "Inter, 思源黑体",
+      "fontSize": 24,
+      "fontWeight": 600,
+      "lineHeight": 32,
+      "letterSpacing": 0
+    },
+    {
+      "name": "文本/模块标题",
+      "fontFamily": "Inter, 思源黑体",
+      "fontSize": 18,
+      "fontWeight": 500,
+      "lineHeight": 26,
+      "letterSpacing": 0
+    },
+    {
+      "name": "文本/正文常规",
+      "fontFamily": "Inter, 思源黑体",
+      "fontSize": 14,
+      "fontWeight": 400,
+      "lineHeight": 22,
+      "letterSpacing": 0
+    },
+    {
+      "name": "文本/辅助小字",
+      "fontFamily": "Inter, 思源黑体",
+      "fontSize": 12,
+      "fontWeight": 400,
+      "lineHeight": 18,
+      "letterSpacing": 0
+    },
+    {
+      "name": "文本/高亮重点文字",
+      "fontFamily": "Inter, 思源黑体",
+      "fontSize": 14,
+      "fontWeight": 600,
+      "lineHeight": 22,
+      "letterSpacing": 0
+    }
+  ],
+  "radius": [
+    {
+      "name": "圆角/按钮常规",
+      "value": 4
+    },
+    {
+      "name": "圆角/卡片",
+      "value": 6
+    },
+    {
+      "name": "圆角/弹窗",
+      "value": 8
+    }
+  ],
+  "spacing": [
+    {
+      "name": "间距/极小8",
+      "value": 8
+    },
+    {
+      "name": "间距/常规16",
+      "value": 16
+    },
+    {
+      "name": "间距/弹窗内边距24",
+      "value": 24
+    }
+  ],
+  "animation": [
+    {
+      "name": "动效/页面切换淡入",
+      "duration": 300,
+      "easing": "linear"
+    },
+    {
+      "name": "动效/弹窗弹出",
+      "duration": 250,
+      "easing": "ease-out"
+    },
+    {
+      "name": "动效/3D镜头过渡",
+      "duration": 400,
+      "easing": "ease-in-out"
+    },
+    {
+      "name": "动效/按钮hover过渡",
+      "duration": 200,
+      "easing": "linear"
+    },
+    {
+      "name": "动效/面板折叠",
+      "duration": 300,
+      "easing": "ease-in-out"
+    },
+    {
+      "name": "动效/设备闪烁周期",
+      "duration": 1000,
+      "easing": "ease-in-out"
+    },
+    {
+      "name": "动效/Loading旋转",
+      "duration": 1200,
+      "easing": "linear"
+    }
+  ],
+  "shadow": [
+    {
+      "name": "遮罩/全局弹窗",
+      "color": "#0F2447",
+      "opacity": 0.7,
+      "type": "overlay"
+    }
+  ]
+}
+
+```
+
+### 导入步骤（30秒完成）
+
+1. 全选复制上方完整 JSON 代码；
+
+2. 进入 Pixso 项目 → 右侧「样式」面板；
+
+3. 点击样式面板右上角「更多」→「导入样式」；
+
+4. 粘贴文本并确认，自动生成：色板库、文本样式、圆角、间距、动画规则；
+
+5. 所有页面组件可直接绑定全局样式，杜绝视觉不统一。
+
+> (Note: May contain AI-generated content.)

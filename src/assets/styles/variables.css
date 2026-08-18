@@ -1,0 +1,97 @@
+/* ===== InDigiTwin-AI 全局设计 Token ===== */
+:root {
+  /* 主色 */
+  --color-primary: #0f2447;
+  --color-primary-light-1: #1a3466;
+  --color-primary-light-2: #254888;
+  --color-primary-light-3: #3a5a8a;
+
+  /* 状态色 */
+  --color-danger: #e53935;
+  --color-danger-light: #ff5252;
+  --color-success: #00c853;
+  --color-success-light: #69f0ae;
+  --color-warning: #ffb300;
+  --color-warning-light: #ffd740;
+  --color-info: #2196f3;
+  --color-info-light: #64b5f6;
+
+  /* 中性色 */
+  --color-canvas: #0a1830;
+  --color-canvas-deep: #050d1a;
+  --color-card: #142a50;
+  --color-card-light: #1a3466;
+  --color-border: #2d4066;
+  --color-border-light: #3a5a8a;
+  --color-text-secondary: #94a3b8;
+  --color-text-primary: #ffffff;
+  --color-disabled: #64748b;
+  --color-overlay: rgba(15, 36, 71, 0.7);
+
+  /* 渐变 */
+  --gradient-primary: linear-gradient(135deg, #254888, #2196f3);
+  --gradient-card: linear-gradient(180deg, #142a50, #0f2447);
+  --gradient-danger: linear-gradient(135deg, #e53935, #ff5252);
+  --gradient-success: linear-gradient(135deg, #00c853, #69f0ae);
+  --gradient-warning: linear-gradient(135deg, #ffb300, #ffd740);
+  --gradient-info: linear-gradient(135deg, #2196f3, #64b5f6);
+
+  /* 阴影 */
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.3);
+  --shadow-modal: 0 8px 40px rgba(0, 0, 0, 0.4);
+  --shadow-glow-info: 0 0 20px rgba(33, 150, 243, 0.3);
+  --shadow-glow-danger: 0 0 20px rgba(229, 57, 53, 0.3);
+  --shadow-glow-success: 0 0 20px rgba(0, 200, 83, 0.3);
+
+  /* 圆角 */
+  --radius-button: 4px;
+  --radius-card: 6px;
+  --radius-modal: 8px;
+  --radius-tag: 4px;
+  --radius-input: 4px;
+  --radius-circle: 50%;
+
+  /* 间距 */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* 动效 */
+  --duration-instant: 150ms;
+  --duration-hover: 200ms;
+  --duration-modal: 250ms;
+  --duration-page: 300ms;
+  --duration-panel: 300ms;
+  --duration-camera: 400ms;
+  --duration-blink: 1000ms;
+  --easing-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --easing-decelerate: cubic-bezier(0, 0, 0.2, 1);
+  --easing-accelerate: cubic-bezier(0.4, 0, 1, 1);
+
+  /* 布局尺寸 */
+  --header-height: 56px;
+  --sidebar-width: 220px;
+  --sidebar-collapsed-width: 60px;
+  --right-panel-width: 320px;
+  --statusbar-height: 28px;
+
+  /* 字体 */
+  --font-family-base: 'Inter', '思源黑体', 'Microsoft YaHei', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-size-xs: 11px;
+  --font-size-sm: 12px;
+  --font-size-base: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 24px;
+
+  /* Z-Index */
+  --z-sidebar: 100;
+  --z-header: 101;
+  --z-statusbar: 100;
+  --z-panel: 90;
+  --z-modal: 1000;
+  --z-tooltip: 1100;
+  --z-toast: 1200;
+}

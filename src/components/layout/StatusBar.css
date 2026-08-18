@@ -1,0 +1,108 @@
+.status-bar {
+  height: var(--statusbar-height);
+  background: var(--color-primary);
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  flex-shrink: 0;
+  position: relative;
+}
+
+.status-bar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-info), transparent);
+  opacity: 0.4;
+}
+
+.status-left,
+.status-center,
+.status-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.status-center {
+  flex: 1;
+  justify-content: center;
+}
+
+.status-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.status-dot.online {
+  background: var(--color-success);
+  box-shadow: 0 0 6px var(--color-success);
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.status-text {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.status-label {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+}
+
+.status-value {
+  font-size: 12px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.status-divider {
+  width: 1px;
+  height: 12px;
+  background: var(--color-border);
+}
+
+.fps-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fps-label {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  letter-spacing: 1px;
+}
+
+.fps-value {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-success);
+  font-family: 'Courier New', monospace;
+  min-width: 28px;
+  text-align: center;
+}

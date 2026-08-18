@@ -1,0 +1,240 @@
+.permission-page {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  gap: 16px;
+  overflow-y: auto;
+  background: var(--color-canvas);
+}
+
+.perm-left {
+  flex: 0 0 260px;
+}
+
+.perm-right {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.perm-card {
+  background: var(--color-card) !important;
+  border-color: var(--color-border) !important;
+  border-radius: var(--radius-card) !important;
+}
+
+.perm-card :global(.ant-card-head) {
+  border-bottom-color: var(--color-border);
+  color: #fff;
+  padding: 0 16px;
+  min-height: 44px;
+}
+
+.perm-card :global(.ant-card-head-title) {
+  padding: 10px 0;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.card-extra {
+  font-size: 11px;
+  color: var(--color-info);
+  font-family: 'Courier New', monospace;
+  letter-spacing: 1px;
+}
+
+.role-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.role-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border-radius: var(--radius-card);
+  background: var(--color-primary);
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all var(--duration-hover) var(--easing-standard);
+  position: relative;
+}
+
+.role-card:hover {
+  background: var(--color-primary-light-1);
+  border-color: var(--color-info);
+}
+
+.role-card.active {
+  border-color: var(--color-success);
+  background: var(--color-primary-light-1);
+  box-shadow: 0 0 16px rgba(0, 200, 83, 0.2);
+}
+
+.role-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.role-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.role-desc {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  margin-top: 2px;
+}
+
+.role-check {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  color: var(--color-success);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.perm-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.perm-group {
+  background: var(--color-primary);
+  border-radius: var(--radius-card);
+  padding: 14px 16px;
+}
+
+.perm-group-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 12px;
+  padding-left: 10px;
+  border-left: 3px solid var(--color-info);
+}
+
+.perm-items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 13px;
+}
+
+.perm-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: var(--color-primary-light-1);
+  border-radius: var(--radius-button);
+  transition: background var(--duration-hover) var(--easing-standard);
+}
+
+.perm-item:hover {
+  background: var(--color-border);
+}
+
+.perm-item-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.perm-item-label {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.perm-item-desc {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  margin-top: 2px;
+}
+
+.perm-divider {
+  border-color: var(--color-border);
+  margin: 20px 0;
+}
+
+.perm-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.save-btn {
+  background: var(--gradient-primary) !important;
+  border: none !important;
+  box-shadow: 0 0 12px rgba(33, 150, 243, 0.3);
+}
+
+.save-btn:hover {
+  box-shadow: 0 0 16px rgba(33, 150, 243, 0.5) !important;
+}
+
+.user-item {
+  border-bottom-color: var(--color-border) !important;
+  padding: 14px 0 !important;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.user-login {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  margin-top: 2px;
+}
+
+.user-role-tag {
+  display: inline-block;
+  padding: 2px 10px;
+  background: var(--color-primary-light-1);
+  color: var(--color-info);
+  border-radius: var(--radius-tag);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.perm-card :global(.ant-list) {
+  background: transparent;
+}
+
+.perm-card :global(.ant-list-item) {
+  padding: 14px 0;
+}
+
+.perm-card :global(.ant-list-item:hover) {
+  background: transparent;
+}

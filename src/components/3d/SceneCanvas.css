@@ -1,0 +1,35 @@
+.scene-canvas {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.scene-canvas canvas {
+  display: block;
+}
+
+.device-selected-label {
+  background: linear-gradient(135deg, rgba(33, 150, 243, 0.95), rgba(37, 72, 136, 0.95));
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  border: 1px solid rgba(33, 150, 243, 0.6);
+  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.3);
+  backdrop-filter: blur(8px);
+  transform: translate(-50%, -100%);
+  animation: label-pulse 2s ease-in-out infinite;
+}
+
+@keyframes label-pulse {
+  0%,
+  100% {
+    box-shadow: 0 4px 12px rgba(33, 150, 243, 0.3);
+  }
+  50% {
+    box-shadow: 0 4px 20px rgba(33, 150, 243, 0.6);
+  }
+}

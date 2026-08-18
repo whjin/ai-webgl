@@ -1,0 +1,177 @@
+.report-page {
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: var(--color-canvas);
+}
+
+.stat-row {
+  flex-shrink: 0;
+}
+
+.stat-card {
+  background: var(--color-card) !important;
+  border-color: var(--color-border) !important;
+  border-radius: var(--radius-card) !important;
+  overflow: hidden;
+}
+
+.stat-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.stat-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stat-card-title {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.stat-card-value {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.stat-card-unit {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+  margin-left: 4px;
+}
+
+.stat-card-trend {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-weight: 500;
+}
+
+.stat-card-trend.up {
+  color: var(--color-success);
+}
+
+.stat-card-trend.down {
+  color: var(--color-danger);
+}
+
+.stat-card-icon {
+  font-size: 32px;
+  color: var(--color-info);
+  opacity: 0.6;
+}
+
+.stat-card-bar {
+  height: 3px;
+  background: var(--color-primary);
+  margin-top: 12px;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.stat-card-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-info), var(--color-success));
+  border-radius: 2px;
+}
+
+.chart-row {
+  flex-shrink: 0;
+}
+
+.chart-card {
+  background: var(--color-card) !important;
+  border-color: var(--color-border) !important;
+  border-radius: var(--radius-card) !important;
+}
+
+.chart-card :global(.ant-card-head) {
+  border-bottom-color: var(--color-border);
+  color: #fff;
+  padding: 0 16px;
+  min-height: 44px;
+}
+
+.chart-card :global(.ant-card-head-title) {
+  padding: 10px 0;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.title-icon {
+  font-size: 14px;
+}
+
+.card-extra {
+  font-size: 11px;
+  color: var(--color-info);
+  font-family: 'Courier New', monospace;
+  letter-spacing: 1px;
+}
+
+.health-ring-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.health-ring-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.health-value {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-success);
+}
+
+.health-label {
+  display: block;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.health-legend {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.health-legend span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.health-legend i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
