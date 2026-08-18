@@ -3,8 +3,14 @@ dist
 dist-ssr
 *.local
 .DS_Store
+._*
 .vscode/*
 !.vscode/extensions.json
 .idea
 *.log
-._.*
+*.tsbuildinfo
+Thumbs.db
+*.tmp
+*.bak
+*.swp
+*.swo
