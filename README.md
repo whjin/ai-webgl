@@ -4,6 +4,13 @@
 
 以work/ui-reference/目录下的UI设计稿为标准图，生成3D模型的真实GLB；检查整体代码，优化UI布局和代码结构，减少冗余代码和控制台报错，达到真实可靠，体验优良，实现生产环境部署上线的效果。
 
+解决步骤：
+
+- `git pull --rebase origin main` — 把本地提交 `rebase` 到远程头上
+- 3 次冲突全部是 `._Deploy.command`（我们刚清理的 macOS 元数据文件），全部用 `git rm ._Deploy.command` 丢弃
+- `git rebase --continue` — 最终 `rebase` 成功
+- `git push origin main` → `Everything up-to-date` ✅
+
 ## 技术栈
 
 - **构建工具**: Vite 5
@@ -94,6 +101,7 @@ src/
 当前使用程序化生成的工业设备占位模型（电机+泵组），无需外部模型文件即可运行。
 
 如需替换为真实 GLB 模型：
+
 1. 将模型文件放入 `public/models/`
 2. 修改 `src/components/3d/ModelExplode.tsx`，使用 `useGLTF` 加载模型
 
@@ -102,3 +110,13 @@ src/
 - `work/01-技术方案与实现思路.md` — 整体技术方案
 - `work/02-核心资料与资源汇总.md` — 设计系统、组件规范、页面结构
 - `docs/` — 原始需求文档和 UI 参考图
+
+# 兼容处理部署脚本
+
+```bash
+git pull --rebase origin main
+
+git rebase --continue
+
+git push origin main
+```
